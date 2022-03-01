@@ -738,7 +738,7 @@ class ElementTree:
                     # Retrieve the default encoding for the xml declaration
                     import locale
                     declared_encoding = locale.getpreferredencoding()
-                write("<?xml version='1.0' encoding='%s'?>\n" % (
+                write("<?xml version=\"1.0\" encoding=\"%s\"?>\n" % (
                     declared_encoding,))
             if method == "text":
                 _serialize_text(write, self._root)
